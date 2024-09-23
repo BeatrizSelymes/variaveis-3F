@@ -23,8 +23,11 @@ const listaDeDestinos = new Array(
   " Cacun",
   " Luxemburgo",
   " Hungria",
-  " Tokyo"
-);
+  " Tokyo",
+  " Nova York",
+  " Alemanha",
+  " Maldivas",
+  );
 
 var nomeComprador = entrada ("Digite seu nome:");
 var idadeComprador = entrada ("Qual a sua idade?");
@@ -33,9 +36,20 @@ var idadeComprador = entrada ("Qual a sua idade?");
 if(idadeComprador  >=18) {
    console.log(" Ola " + nomeComprador);
   console.log("Comprador maior de idade");
-  console.log("destinos disponíveis: " + listaDeDestinos);
+  
+  var contador = 0;
+  while(contador <9 ){
+    console.log(listaDeDestinos[contador]);
+    contador++;
+  
+  }
+  var destino = entrada("Digite o número que corresponde ao destino selecinado")
+  console.log("destino selecionado foi: ${listaDeDestinos[destino]}}");
+  
 } else {
   console.log(" Ola " + nomeComprador);
   console.log(" Comprador menor de idade ");
   console.log(" Infelizmente você não pode comprar a passagem ");
+
 }
+
